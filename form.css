@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+background-color: rgb(116, 118, 120);
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+}
+
+.form {
+   background: linear-gradient(
+   50deg,
+   rgba(40,42,55,1) 50%,
+   rgba(40,42,55, 0.7)
+   ),
+   url(imagenes/fragilidad.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding: 50px;
+   width: 1000px;
+   border-radius: 25px;
+}
+
+.form h2{
+    color: aliceblue;
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+label {
+    font-size: 17px;
+    color: rgb(166, 171, 191);
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    padding: 17px 14px;
+    background-color: rgb(43, 52, 72);
+    border: 0;
+    font-size: 15px;
+    color: aliceblue;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+footer {
+    font-size: 17px;
+    color: aliceblue;
+}
+
+:focus {
+    outline: 1px solid #1e92e9; 
+}
+
+@media(max-width:991px) {
+    body {
+        padding: 30px;
+    }
+    .form {
+        width: 100%;
+    }
+    form {
+        width: 100%;
+    }
+}
+
